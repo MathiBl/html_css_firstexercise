@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+
+    <div>
+
+        <h3>Reservas</h3>
+
+        <div class="reservas_container_main">
+            <form action="GET" target="*">
+                <div class="booking_table">
+                    <label for="people_number">Personas</label><br>
+                    <select name="people" id="people_number">
+                        <option value="">Número de personas</option>
+                        <option value="2 personas">2 personas</option>
+                        <option value="3 personas">3 personas</option>
+                        <option value="4 personas">4 personas</option>                        
+                    </select><br>
+
+                    <label for="hour_selection">Hora</label><br>
+                    <select name="hour" id="hour_selection">
+                        <option value="">Seleccione una hora</option>
+                        <option value="12:00">12:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="16:00">16:00</option>                        
+                        <option value="20:00">20:00</option>                        
+                        <option value="21:00">21:00</option>                        
+                        <option value="22:00">22:00</option>                        
+                    </select><br>
+
+                    <label for="table_selection">Tipo de mesa</label><br>
+                    <select name="table" id="table_selection">
+                        <option value="">Seleccione el tipo de mesa</option>
+                        <option value="Sala">Sala</option>
+                        <option value="Terraza">Terraza</option>
+                    </select><br>
+
+                    <button type="submit" onclick="checkForm()" value="Reservar">Reservar</button>       
+                  </div>
+
+                  <div class="waiting_list">
+                    <p>Si no encuentra disponibilidad, apúntese en la lista de espera.</p>
+                    <button type="submit" onclick="checkForm()" value="Lista de espera">Lista de espera</button><br>
+                    <button type="submit" onclick="checkForm()" value="Solicitud de grupo">Solicitud de grupo</button>
+                  </div>
+
+            </form>
+
+            <div class="restaurant_info">
+                <h3>MOZZABAR FOOD & DRINK</h3>
+                <p> Conde del Peñalver 64
+                        28006 - Madrid
+                        Abrimos de lunes a domingo
+                        de 07:30 a 01:30
+                </p>
+            </div>
+                
+            
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
