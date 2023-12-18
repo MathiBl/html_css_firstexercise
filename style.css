@@ -1,0 +1,470 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEAD */
+
+.container_top {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(31, 31, 31);
+}
+
+.logo {
+  width: 200px;
+  margin-left: 100px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  margin-left: 260px;
+  margin-top: 30px;
+}
+
+.menu_noDecoration {
+  color: white;
+  text-decoration: none;
+}
+
+.menu_decoration {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: #c19d3e;
+}
+
+.menu_decoration2 {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: #c19d3e;
+}
+
+.menu_decoration::after {
+  border-bottom: 2px solid #c19d3e;
+  width: 16px;
+  content: '';
+  height: auto;
+  z-index: 1;
+  padding: 12px;
+  position: absolute;
+  margin-left: -40px;
+}
+
+.menu_decoration2::after {
+  border-bottom: 2px solid #c19d3e;
+  width: 50px;
+  content: '';
+  height: auto;
+  z-index: 1;
+  padding: 12px;
+  position: absolute;
+  margin-left: -66px;
+}
+
+/* BODY HOME */
+
+.container_body {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background-image: url(home_backgroung_img.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.body_img {
+  width: 300px;
+  height: 300px;
+}
+
+.container_síguenos {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.síguenos {
+  margin: 0px auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.síguenos h4 {
+  margin-left: 80px;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+h4::after,
+h4::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: #c19d3e;
+  top: 0.4em;
+}
+
+h4::before {
+  left: -140px;
+}
+
+h4::after {
+  right: -140px;
+}
+
+.social_network {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #c19d3e;
+  color: black;
+  border-color: white;
+  transform: scale(0.9);
+  transition: all 0.2s;
+}
+
+.link_social_network {
+  padding: 10px;
+}
+
+/* BODY CONCEPTO */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  width: 500px;
+  height: 250px;
+  margin-bottom: 230px;
+  /* justify-content: center;
+    align-items: center; */
+}
+
+.text_container {
+  padding: 30px;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  text-align: center;
+}
+
+.text_container h3 {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+h3::after,
+h3::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: white;
+  top: 0.4em;
+}
+
+h3::before {
+  left: -120px;
+}
+
+h3::after {
+  right: -120px;
+}
+
+.text_container p {
+  text-align: justify;
+}
+
+.first_img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin-top: -540px;
+  margin-left: -105px;
+}
+
+.second_img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  margin-top: -560px;
+  margin-left: 390px;
+}
+
+/* BODY FOTOS */
+
+.fotos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  background-image: url(reservas_background_img.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* BODY RESERVAS */
+
+.container_reservas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  background-image: url(reservas_background_img.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.container_reservas h3 {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  color: white;
+  /* justify-content: center; */
+  margin-left: 450px;
+}
+
+h3::after,
+h3::before {
+content: "";
+position: absolute;
+width: 120px;
+height: 2px;
+background-color: #c19d3e;
+top: 0.4em;
+}
+
+h3::before {
+left: -140px;
+}
+
+h3::after {
+right: -140px;
+}
+
+.container_reservas2 {
+  display: flex;
+  position: relative;
+  margin: 100px auto;
+  background-color: rgb(31, 31, 31);
+  width: 1000px;
+  height: 350px;
+}
+
+.main_body {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 100px; */
+  position: relative;
+  margin-left: -330px;
+  margin-top: 55px;
+}
+
+.booking_table {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 400px;
+  margin-left: -150px;
+  color: white;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+}
+
+.hour {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 225px;
+  margin-top: -37px;
+  width: 200px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 425px;
+  margin-bottom: 20px;
+}
+
+.waiting_list {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.waiting_list button {
+  width: 425px;
+  margin: 3px 0;
+}
+
+.restaurant_info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 100px;
+  color: white;
+}
+
+.mozzabar {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline;
+  position: relative;
+}
+
+.mozzabar::after {
+  border-bottom: 2px solid white;
+  width: 30px;
+  content: '';
+  height: auto;
+  padding: 20px;
+  position: absolute;
+  margin-left: -146px;
+}
+
+span {
+  font-size: 20px;
+  color: #c19d3e;
+  font-weight: bold;
+}
+
+/* CONTACTO */
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  background-image: url(reservas_background_img.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.vencuandoquieras{
+  background-color: black;
+  opacity: 70%;
+  width: 100%;
+  height: 100%;
+}
+
+.vencuandoquieras img {
+    display: flex;
+    position: relative;
+    margin: 50px auto;
+    width: 300px;
+    height: 150px;
+}
+
+.vencuandoquieras h5 {
+  text-transform: uppercase;
+  color:white;
+  text-align: center;
+  font-size: larger;
+}
+
+
+/* FOOT */
+
+.container_bottom {
+  background-color: #ededed;
+  border: 1px solid #c19d3e;
+  display: flex;
+  flex-direction: column;
+}
+
+.container_bottom_topPart {
+  display: flex;
+  flex-direction: row;
+}
+
+.container_bottom_topPart div {
+  margin-left: 18%;
+  margin-left: 18%;
+}
+
+.container_bottom_topPart h5 {
+  text-transform: uppercase;
+}
+
+.menu_legal {
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+}
+
+.menu_legal a {
+  text-decoration: none;
+  color: black;
+}
+
+.hours p {
+  margin: 0;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.container_bottom_bottomPart {
+  display: flex;
+  flex-direction: row;
+}
+
+.copyright {
+  margin-left: 230px;
+  margin-top: 20px;
+}
+
+.social_buttons {
+  margin-left: 700px;
+}
+
+.fa {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 20px;
+  width: 10px;
+  /* text-align: center; */
+  text-decoration: none;
+  background: #ededed;
+  color: black;
+}
+
+.fa:hover {
+    color: #c19d3e;
+    border-color: white;
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
